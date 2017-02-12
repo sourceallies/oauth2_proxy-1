@@ -161,7 +161,7 @@ func TestBasicAuthPassword(t *testing.T) {
 
 	provider_url, _ := url.Parse(provider_server.URL)
 	const email_address = "michael.bland@gsa.gov"
-	const user_name = "michael.bland"
+	const user_name = "fixed-oauth2-proxy-username"
 
 	opts.provider = NewTestProvider(provider_url, email_address)
 	proxy := NewOAuthProxy(opts, func(email string) bool {
