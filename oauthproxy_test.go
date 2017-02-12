@@ -481,7 +481,6 @@ func TestLoadCookiedSession(t *testing.T) {
 	session, _, err := pc_test.LoadCookiedSession()
 	assert.Equal(t, nil, err)
 	assert.Equal(t, startSession.Email, session.Email)
-	assert.Equal(t, "fixed-oauth2-proxy-username", session.User)
 	assert.Equal(t, startSession.AccessToken, session.AccessToken)
 }
 
