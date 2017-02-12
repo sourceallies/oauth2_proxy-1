@@ -11,6 +11,12 @@ to validate accounts by email, domain or group.
 
 ![Sign In Page](https://cloud.githubusercontent.com/assets/45028/4970624/7feb7dd8-6886-11e4-93e0-c9904af44ea8.png)
 
+## Local Build
+
+```bash
+docker run -it --name go-build --rm -v `pwd`:/go/src/app -w /go/src/app golang:1.6 /bin/bash -c "go get -d -v  ; go build -v -o /go/src/app/oauth2_proxy"
+```
+
 ## Architecture
 
 ![OAuth2 Proxy Architecture](https://cloud.githubusercontent.com/assets/45028/8027702/bd040b7a-0d6a-11e5-85b9-f8d953d04f39.png)
