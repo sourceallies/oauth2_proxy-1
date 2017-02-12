@@ -15,6 +15,9 @@ to validate accounts by email, domain or group.
 
 ```bash
 docker run -it --name go-build --rm -v `pwd`:/go/src/app -w /go/src/app golang:1.6 /bin/bash -c "go get -d -v  ; go build -v -o /go/src/app/oauth2_proxy"
+mkdir oauth2_proxy-2.2.0.linux-amd64.go1.6
+cp oauth2_proxy oauth2_proxy-2.2.0.linux-amd64.go1.6
+tar -cvzf oauth2_proxy-2.2.0.linux-amd64.go1.6.tar.gz oauth2_proxy-2.2.0.linux-amd64.go1.6/
 ```
 
 ## Architecture
